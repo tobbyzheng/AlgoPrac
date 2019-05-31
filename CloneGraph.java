@@ -1,3 +1,5 @@
+/* https://www.lintcode.com/problem/clone-graph/description */
+
 /**
  * Definition for undirected graph.
  * class UndirectedGraphNode {
@@ -31,7 +33,7 @@ public class Solution {
         
         queue.add(node);
         set.add(node);
-        
+
         while (!queue.isEmpty()) {
             UndirectedGraphNode cur = queue.poll();
             // create a new instance or get existing copied instance:
